@@ -27,19 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     
 
-    let selectDropdown = document.querySelector("select#breed-dropdown")
-selectDropdown.addEventListener("change", (event) => {
-    event.preventDefault()
-    const selectedLetter = event.target.value
-    const selectedLetter = breeds.filter(breed => breed.startsWith(selectedLetter))
-    const listContainer = document.querySelector("#dog-breeds")
-    let newList = document.createElement("ul")
-    selectedBreeds.forEach(breed => {
-        item = document.createElement("li")
-        item.innterHTML = breed
-        listContainer.append(item)
-    })
-})
+ 
 
 
 
